@@ -13,7 +13,7 @@ class Owner(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
     mobile = db.Column(db.String)
-    interests = relationship('OwnerInterest', back_populates='owner')
+    interests = db.relationship('OwnerInterest', back_populates='owner')
 
     def __repr__(self):
         return '<Owner {}>'.format(self.name)
@@ -22,7 +22,7 @@ class Owner(db.Model):
 class Interest(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
-    owners = relationship('OwnerInterest', back_poulates='interest')
+    owners = db.relationship('OwnerInterest', back_poulates='interest')
 
     def __repr__(self):
         return '<Owner {}>'.format(self.name)
