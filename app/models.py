@@ -25,5 +25,5 @@ class Interest(db.Model):
     owners = db.relationship('OwnerInterest', back_populates='interest')
 
     def __repr__(self):
-        return '<Owner {}>'.format(self.name)
+        return '<Interest {}>'.format(self.name)
 
