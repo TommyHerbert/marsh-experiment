@@ -22,7 +22,7 @@ class Owner(db.Model):
 class Interest(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
-    owners = db.relationship('OwnerInterest', back_poulates='interest')
+    owners = db.relationship('OwnerInterest', back_populates='interest')
 
     def __repr__(self):
         return '<Owner {}>'.format(self.name)
