@@ -1,8 +1,8 @@
-"""owners, interests and owner_interests tables
+"""owner, interest and owner_interest tables
 
-Revision ID: 456a94b71687
+Revision ID: 0c343d1e49af
 Revises: 
-Create Date: 2019-10-30 12:26:27.035585
+Create Date: 2019-10-30 18:52:49.651971
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '456a94b71687'
+revision = '0c343d1e49af'
 down_revision = None
 branch_labels = None
 depends_on = None
